@@ -1,3 +1,5 @@
+using Dima.Core.Enums;
+
 namespace Dima.Core.Models;
 
 public class Transaction
@@ -6,7 +8,7 @@ public class Transaction
     public string Titulo { get; set; } = string.Empty;
     public DateTime DataCriacao { get; set; } = DateTime.Now;
     public DateTime? DataRecebimento { get; set; }
-    public int TipoMovimentacao { get; set; }
+    public ETipoTransacao Tipo { get; set; } = ETipoTransacao.Despesa;
     public decimal Valor { get; set; }
 
     public long CategoriaId { get; set; }
