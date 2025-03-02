@@ -23,7 +23,7 @@ public class CategoriaMapping : IEntityTypeConfiguration<Categoria>
             .IsRequired(false);
 
         builder.Property(x => x.UsuarioId)
-            .HasColumnType("NVARCHAR")
+            .HasColumnType("VARCHAR")
             .HasMaxLength(160)
             .IsRequired(true);
     }
