@@ -22,6 +22,8 @@ builder.Services.AddTransient<Handler>();
 
 var app = builder.Build();
 
+app.Urls.Add("http://0.0.0.0:80");
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
